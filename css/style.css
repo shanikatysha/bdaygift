@@ -89,14 +89,14 @@ figure {
 }
 
 .page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
-    background: #f3f3ef;
+    background: #181818;
     position: fixed;
     z-index: 9999;
 }
 
 .page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
     padding: 11px;
-    background: #ccc;
+    background: #181818;
 }
 
 .page-border .bottom-border, .page-border .top-border {
@@ -178,7 +178,7 @@ input:focus, textarea:focus {
 canvas {
     display: block;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(226, 226, 226);
 }
 
 #playbutton {
@@ -190,7 +190,9 @@ canvas {
     font-family: Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    background-color: white;
+    color: #dfdfdf;
+    background-color: #181818;
+    border: 1px solid rgb(226, 226, 226);
     cursor: pointer;
 }
 
@@ -526,7 +528,7 @@ section {
 }
 
 #header.nav-solid {
-    background: #fff;
+    background: #181818;
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
     position: fixed !important;
     left:0;
@@ -534,7 +536,7 @@ section {
 
 #header.nav-solid nav a {
     border-bottom: 3px solid;
-    border-color: #fff;
+    border-color: #181818;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -571,7 +573,7 @@ section {
     display: inline-block;
     width: 38px;
     height: 71px;
-    color: #111;
+    color: #d6d6d6;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 22px;
@@ -605,7 +607,7 @@ section {
 }
 
 #nav-trigger span.open, #nav-trigger span.open:hover {
-    color: #111;
+    color: #f4f4f4;
 }
 
 .nav-solid #nav-trigger span.open:hover {
@@ -633,7 +635,7 @@ nav#nav-mobile ul {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: #fff;
+    background-color: #181818;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -645,7 +647,7 @@ nav#nav-mobile li {
     margin: 0 20px;
     float: none;
     text-align: left;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #181818;
 }
 
 nav#nav-mobile li:last-child {
@@ -653,14 +655,14 @@ nav#nav-mobile li:last-child {
 }
 
 .nav-solid nav#nav-mobile li {
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid #181818;
     border-bottom: none;
 }
 
 nav#nav-mobile a {
     display: block;
     padding: 12px 0;
-    color: #333;
+    color: #dfdfdf;
     width: 100%;
     height: auto;
     line-height: normal;
@@ -673,7 +675,7 @@ nav#nav-mobile a {
 }
 
 nav#nav-mobile a:hover {
-    background: #fafafa;
+    background: #181818;
     opacity: 1;
 }
 
@@ -803,7 +805,7 @@ h6 {
 
 #banner-content.row {
     padding-top: 170px;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
 }
 
 #banner h1 {
@@ -1039,6 +1041,63 @@ blockquote {
     top: 50%;
     left: 50%;
 }
+
+/**
+ * Password Form
+**/
+
+.div1 {
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .div2 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: VT323;
+    font-size: 25px;
+    color: #f6f6f6;
+  }
+  
+  .box {
+    text-align: center;
+    font-size: 20px;
+    font-family: VT323;
+    outline: none;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #656262;
+    background: transparent;
+    caret-color: #e1e1e1;
+    color: #e1e1e1;
+  }
+  
+  .confirm {
+    border: none;
+    font-size: 20px;
+    font-family: VT323;
+    margin-top: 10px;
+    color: #e6e6e6;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: transparent;
+    cursor: pointer;
+    caret-color: #e1e1e1;
+  }
+
+  .input[type="password"]:focus {
+    caret-color: #e1e1e1;
+    color: #e1e1e1;
+  }
+
+  /* .confirm:focus, .confirm:active {
+    background-color: #e4473c;
+} */
 
 /**
  * Featherlight – ultra slim jQuery lightbox
@@ -1415,7 +1474,7 @@ blockquote {
 .client-overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top; 0;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1558,7 +1617,7 @@ blockquote {
 }
 
 #scrollUp:before {
-    background: #ccc;
+    background: #393939;
     font-family: "fontawesome";
     font-size: 2.4em;
     font-style: normal;
@@ -1581,7 +1640,7 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff; /* change if the mask should have another color then white */
+    background-color: #181818; /* change if the mask should have another color then white */
     z-index: 99999; /* makes sure it stays on top */
 }
 
@@ -2132,7 +2191,7 @@ blockquote {
     }
 
     .row {
-        padding: 15px !important;
+        padding: 30px !important;
     }
 
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38, .row {
