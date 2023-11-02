@@ -35,7 +35,7 @@
 <!--Password Check-->
 <div class="div1" style="width: 100%;"> 
     <div class="div2" style="padding:20px">
-        <p>Let's see if you're really who you say you are, shall we ☺︎</p>
+        <p id="see">Let's see if you're really who you say you are, shall we ☺︎</p>
       <form id="keyForm" width="90%">
           <label for="secret_key">What did Isaac call Aimee in his trailer after she said that she used to bury her mum's jewelry in the garden when she's upset?</label>
         </br></br>
@@ -149,10 +149,6 @@
                     <h1 style="font-size: 80px; line-height:normal">Your Birthday <s>Card</s> Web</h1>
                     <h2 style="line-height:normal">Something to keep you less lonely today. Which sebenarnya I highly doubt. Damn you social butterfly.</h2>
                 </div>
-
-                <!--Call to Action-->
-                <!-- <a href="#" class="button">START CREATING TODAY</a> -->
-                <!--End Call to Action-->
 
             </div>
 
@@ -310,7 +306,7 @@
 
                 <div class="section-heading">
                     <h3 style="color:#d2b356">PLAY</h3>
-                    <h2 class="section-title">Nadhif's Dunya Crossword Puzzle</h2>
+                    <h2 class="section-title">Nadhif's Crossword Puzzle</h2>
                     <h5 style="color:darkgrey">Press down on a character and drag to cross off a word</h4><br><br><br>
                     <div style="position: relative; width: 100%; text-align: center; background-color: rgb(190, 97, 36); border-radius: 24px; margin-top: 16px;">
                         <iframe style="height: 760px; border: 0; margin: auto; color: whitesmoke;" frameBorder="0" width="65%" height="100%" allowFullScreen="false" scrolling="no" src="https://webwordsearch.com/embed-play/?data=eyJpZCI6ImxvOXA3MTd6NDdhYXQ4aGp6NnQiLCJncmlkU2l6ZSI6MTQsInRpdGxlIjoiICIsIndvcmRzIjpbIkJhbmR1bmciLCJDaWVsIiwiQXJjaGl0ZWN0dXJlIiwiU2NvcnBpb25zIiwiVGVubmlzIiwiQ3Jlc2NlbmRvIiwiQWZ0ZXJzdW4iLCJCeW5hbWljIiwiR2FuZXNoYSIsIlNrZW5hIl0sInNlZWQiOi0zMTUzNjkzNzUsImRpcmVjdGlvbnMiOlsidXAiLCJkb3duIiwicmlnaHQiLCJkaWFnb25hbC11cC1yaWdodCIsImRpYWdvbmFsLWRvd24tcmlnaHQiXSwicm93cyI6MTQsImNvbHMiOjE0LCJjYXRlZ29yeSI6eyJuYW1lIjoiTXkgUHV6emxlcyJ9fQ=="></iframe>
@@ -322,39 +318,6 @@
         </aside>
         <!--End of Testimonials-->
 
-        <!--Clients-->
-        <!-- <section id="clients" class="third-color scrollto clearfix">
-            <div class="row clearfix">
-
-                <div class="col-3">
-
-                    <div class="section-heading">
-                        <h3>TRUST</h3>
-                        <h2 class="section-title">Play a Game of Tetris</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-                    </div>
-
-                </div>
-                
-
-                <div class="col-2-3">
-                    <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
-                    <canvas width='300' height='600'></canvas>
-                    <button id="playbutton" onclick="playButtonClicked();">Play</button>
-                    <script src='js/tetris.js'></script>
-                    <script src='js/controller.js'></script>
-                    <script src='js/render.js'></script>
-
-                    
-
-                </div>
-
-            </div>
-        </section> -->
-        <!--End of Clients-->
-
         <!--Pricing Tables-->
         <section id="pricing" class="secondary-color text-center scrollto clearfix ">
             <div class="row clearfix" style="padding-top:80px">
@@ -363,7 +326,7 @@
                     <h3 style="color:#d2b356">CONFIDENTIAL</h3>
                     <h2 class="section-title">Extra Gift</h2>
                     <h5 style="color:darkgrey">Gue daftarin lo buat liburan ke outer space (ini legit dari NASA), jadi tiketnya gue protect pake <b>4 digit passcode.</b> 
-                        <br><br><b>*Hint</b>: tanggal ultah lo + tanggal 1st date + tanggal wisuda lo
+                        <br><br><b>*Passcode</b>: your birthday + our 1st date + your graduation day
                         <br><br>Misal 1 Januari + 2 Januari = 0101 + 0201 = 0302</h4><br><br><br>
                 </div>
 
@@ -427,6 +390,7 @@
             document.getElementById("wrapper").style.display ='block';
             document.getElementById("keyForm").style.display = 'none';
             document.getElementById("wrongKey").style.display ='none';
+            document.getElementById("see").style.display ='none';
         }
         else{
             document.getElementById("wrongKey").style.display ='inline-block';
