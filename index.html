@@ -32,6 +32,22 @@
 </head>
 <body>
 
+<!--Password Check-->
+<div class="div1" style="width: 100%;"> 
+    <div class="div2" style="padding:20px">
+        <p>Let's see if you're really who you say you are, shall we ☺︎</p>
+      <form id="keyForm" width="90%">
+          <label for="secret_key">What did Isaac call Aimee in his trailer after she said that she used to bury her mum's jewelry in the garden when she's upset?</label>
+        </br></br>
+          <input type="password" id="secret_key" class="box">
+        </br>
+          <input type="button" value="Submit" onclick="checkUser();" class="confirm" />
+      </form>
+      <p id="wrongKey" hidden style="color: indianred;">Incorrect</p>
+    </div>
+</div>
+<!--End Password Check-->
+
 <!-- Preloader -->
 <div id="preloader">
     <div id="status" class="la-ball-triangle-path">
@@ -49,7 +65,7 @@
     <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
 </div>
 
-<div id="wrapper">
+<div id="wrapper" hidden>
 
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
@@ -60,11 +76,11 @@
                     <div id="logo">
 
                         <!--Logo that is shown on the banner-->
-                        <img src="images/logo.svg" id="banner-logo" alt="Landing Page"/>
+                        <a href="#banner"><img src="images/logo.svg" id="banner-logo" alt="Landing Page"/></a>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logo.svg" id="navigation-logo" alt="Landing Page"/>
+                        <a href="#banner"><img src="images/logo.svg" id="navigation-logo" alt="Landing Page"/></a>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -75,7 +91,7 @@
                         <!--Social Icons in Header-->
                         <ul class="social-icons">
                             <li>
-                                <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                                <a target="_blank" title="Twitter" href="http://www.twitter.com/NadhifAdristia">
                                     <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
                                 </a>
                             </li>
@@ -96,7 +112,7 @@
                                 <a href="#banner">Facade</a>
                             </li>
                             <li>
-                                <a href="#about">Message</a>
+                                <a href="#about">Wishes</a>
                             </li>
                             <li>
                                 <a href="#gallery">Aesthetics</a>
@@ -129,9 +145,9 @@
 
             <div class="col-38">
 
-                <div class="section-heading">
-                    <h1>Your Birthday <s>Card</s> Web</h1>
-                    <h2>Hoping u don't feel lonely today and until your next 4th of November.</h2>
+                <div class="section-heading fadeInUp">
+                    <h1 style="font-size: 80px; line-height:normal">Your Birthday <s>Card</s> Web</h1>
+                    <h2 style="line-height:normal">Something to keep you less lonely today. Which sebenarnya I highly doubt. Damn you social butterfly.</h2>
                 </div>
 
                 <!--Call to Action-->
@@ -153,27 +169,29 @@
 
                 <div class="col-3">
                     <div class="section-heading">
-                        <h3 style="color:#d2b356">SUCCESS</h3>
-                        <h2 class="section-title">How We Help You To Sell Your Product</h2>
-                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                        <h3 style="color:#d2b356">READ</h3>
+                        <h2 class="section-title">On this special day, I wish u everything your heart desires~</h2>
+                        <p class="section-subtitle">Although I haven't known you for long, I can tell there are many layers
+                            to your incredibly warm and multifaceted personality. Also, I think you're an imbecile and extremely 
+                            hard to text (til this second, while I'm typing this, you still haven't replied my wa). 
+                            <br><br>
+                            Here are some things I wish you to have on your birthday based on what I can conclude from our conversations these past few weeks...
+                        </p>
                     </div>
-
                 </div>
 
                 <div class="col-2-3">
-
                     <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                         <!--Icon-->
-                        <div class="icon">
+                        <!-- <div class="icon">
                             <i class="fa fa-html5 fa-2x"></i>
-                        </div>
+                        </div> -->
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>HTML5 &amp; CSS3</h4>
-                            <p>Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro
-                                neglegentur iudico</p>
+                            <p>You're incredibly passionate in what you do, even to the intricate details, and you try your best to make everyone around you proud.
+                            </p>
+                            <h4>I hope you never lose that spark.</h4>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -181,14 +199,14 @@
                     <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
                         <!--Icon-->
-                        <div class="icon">
+                        <!-- <div class="icon">
                             <i class="fa fa-bolt fa-2x"></i>
-                        </div>
+                        </div> -->
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Easy to Use</h4>
-                            <p>Cu vero ipsum vim, doctus facilisi sea in. Eam ex falli honestatis repudiandae, sit
-                                detracto mediocrem disputationi</p>
+                            <p>Berdasarkan alasan lo nge-cancel jalan waktu itu (dan banyak hal lainnya), I know you're a considerate person and you put others before you.
+                            </p>
+                            <h4>I hope you get every good thing in return dikali 1000.</h4>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -196,14 +214,13 @@
                     <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
-                        <div class="icon">
+                        <!-- <div class="icon">
                             <i class="fa fa-tablet fa-2x"></i>
-                        </div>
+                        </div> -->
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Fully Responsive</h4>
-                            <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum</p>
+                            <p>MAAF KALO CRINGE, here it goes. Not everything in your past defines you. You can choose what defines you and I think people will believe it.</p>
+                            <h4>I hope you always feel enough and worthy.</h4>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -211,19 +228,28 @@
                     <!--Icon Block-->
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
-                        <div class="icon">
+                        <!-- <div class="icon">
                             <i class="fa fa-rocket fa-2x"></i>
-                        </div>
+                        </div> -->
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Parallax Effect</h4>
-                            <p>Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum</p>
+                            <p>I gotta include this one here cuz it's the mandatory doa in every birthday, dan juga karena gue tau habits lo. Semua harus bAlaNcE right.</p>
+                            <h4>I hope you live a long and HEALTHY life.</h4>
                         </div>
                     </div>
                     <!--End of Icon Block-->
 
                 </div>
+                <p class="section-subtitle" style="padding: 20px; display: inline-block;">
+                    So much more yang bisa gue doain tapi biar ga agresif gue kasih segitu dulu ya. I hope you enjoy this little gift and PLEASE do explore 
+                    karena banyak hidden mickeys disini. I know it's not much tapi cuman lo di dunia ini yang punya dan tau isinya and I think that's def something. I'm giving you a 
+                    full experience rn, you’re witnessing greatness right nere, and that is my rizz (which kali ini gbs lo ikutin :p). That's it, happy birthday Nadhif.
+                     I hope you're happy today and continue to do so until your next 4th of November.
+                    <br><br>
+                    Yours, Tysha
+                    <br>
+                    *P.S. semoga lo salting (lagi), tp jangan share di twitter (lagi) y.
+                </p>
 
             </div>
 
@@ -236,24 +262,24 @@
         <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
                  data-featherlight-filter="a">
 
-                <a href="images/gallery-images/Frame 4.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.1s"><img src="images/gallery-images/Frame 4.svg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/Frame 3.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.3s"><img src="images/gallery-images/Frame 3.svg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/Frame 7.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="images/gallery-images/Frame 7.svg" alt="Landing Page"/></a>
+                   data-wow-delay="0.1s"><img src="images/gallery-images/Frame 3.svg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/Frame 6.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="1.1s"><img src="images/gallery-images/Frame 6.svg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/Frame 5.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.9s"><img src="images/gallery-images/Frame 5.svg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.7s"><img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/Frame 4.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.1s"><img src="images/gallery-images/Frame 4.svg" alt="Landing Page"/></a>
-                <a href="images/gallery-images/Frame 3.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.3s"><img src="images/gallery-images/Frame 3.svg" alt="Landing Page"/></a>
+                   data-wow-delay="0.3s"><img src="images/gallery-images/Frame 6.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 8.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/Frame 8.svg" alt="Landing Page"/></a>
                 <a href="images/gallery-images/Frame 7.svg" data-featherlight="image" class="col-3 wow fadeIn"
-                   data-wow-delay="0.5s"><img src="images/gallery-images/Frame 7.svg" alt="Landing Page"/></a>
+                   data-wow-delay="1.1s"><img src="images/gallery-images/Frame 7.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 10.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.9s"><img src="images/gallery-images/Frame 10.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 4.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.7s"><img src="images/gallery-images/Frame 4.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 12.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.1s"><img src="images/gallery-images/Frame 12.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 5.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.3s"><img src="images/gallery-images/Frame 5.svg" alt="Landing Page"/></a>
+                <a href="images/gallery-images/Frame 11.svg" data-featherlight="image" class="col-3 wow fadeIn"
+                   data-wow-delay="0.5s"><img src="images/gallery-images/Frame 11.svg" alt="Landing Page"/></a>
 
         </aside>
         <!--End of Gallery-->
@@ -263,7 +289,7 @@
             <div class="row clearfix">
 
                 <div class="section-heading">
-                    <h3 style="color:#d2b356">YOUR CHOICE</h3>
+                    <h3 style="color:#d2b356">LISTEN</h3>
                     <h2 class="section-title">Nadhif's Playlist</h2>
                     <div style="position: relative; width: 80%; align-text: center; align-items: center; margin: auto;">
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/200U4qdwkvmxnP7wiYsZTu?utm_source=generator" 
@@ -331,7 +357,7 @@
 
         <!--Pricing Tables-->
         <section id="pricing" class="secondary-color text-center scrollto clearfix ">
-            <div class="row clearfix">
+            <div class="row clearfix" style="padding-top:80px">
 
                 <div class="section-heading">
                     <h3 style="color:#d2b356">CONFIDENTIAL</h3>
@@ -368,17 +394,17 @@
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
 
-            <p id="copyright" class="col-2">Made with effort by Tyshuh</p>
+            <p id="copyright" class="col-2">(2023) Made with effort by Tysha</p>
 
             <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
                 <li>
-                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                    <a target="_blank" title="Twitter" href="http://www.twitter.com/thegoldenkiid">
                         <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" title="Instagram" href="http://www.instagram.com/nadhifadristia">
+                    <a target="_blank" title="Instagram" href="http://www.instagram.com/shanikatysha">
                         <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
                     </a>
                 </li>
@@ -392,6 +418,29 @@
 </div>
 
 <!-- Include JavaScript resources -->
+<script type="text/javascript">
+    let input = document.getElementById('secret_key');
+    function checkUser() {
+        var confirmSecretKey = "maverick";
+        var secretKey = document.getElementById("secret_key").value;
+        if (secretKey == confirmSecretKey) {
+            document.getElementById("wrapper").style.display ='block';
+            document.getElementById("keyForm").style.display = 'none';
+            document.getElementById("wrongKey").style.display ='none';
+        }
+        else{
+            document.getElementById("wrongKey").style.display ='inline-block';
+        }
+    }
+    // function to detect keypress event
+    input.addEventListener("keydown", function (event) {
+        // detect event key
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            checkUser();
+        }
+    });
+</script>
 <script src="js/jquery.1.8.3.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/featherlight.min.js"></script>
@@ -405,6 +454,7 @@
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
 <script type="text/javascript">
+    let inputs = document.getElementById('pswd');
     function checkPswd() {
         var confirmPassword = "5330";
         var password = document.getElementById("pswd").value;
@@ -416,6 +466,14 @@
             alert("Salah, coba lagi y");
         }
     }
+    // function to detect keypress event
+    inputs.addEventListener("keydown", function (event) {
+        // detect event key
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            checkPswd();
+        }
+    });
 </script>
 
 </body>

@@ -317,7 +317,7 @@ section {
 }
 
 .col-38 {
-    width: 38.2%;
+    width: 47%;
 }
 
 /* --------- 2.1 Header --------- */
@@ -1578,7 +1578,8 @@ blockquote {
 }
 
 #landing-footer .row {
-    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 #landing-footer p {
